@@ -10,12 +10,11 @@ WORKDIR /app
 # Copy local code to the container image.
 COPY . .
  
-RUN ls -la
  
 # Build the app.
-RUN chmod +x ./gradlew
+RUN chmod +x gradlew
 # RUN ./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install
-RUN ./gradlew clean build -x test
+RUN gradlew clean build -x test
  
  
 # Run the app by dynamically finding the JAR file in the target directory
