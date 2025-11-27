@@ -8,7 +8,7 @@ WORKDIR /app
  
  
 # Copy local code to the container image.
-COPY . ./
+COPY . .
  
  
 # Build the app.
