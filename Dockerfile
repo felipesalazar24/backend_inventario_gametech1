@@ -12,6 +12,7 @@ COPY . ./
  
  
 # Build the app.
+RUN chmod +x ./gradlew
 # RUN ./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install
 RUN ./gradlew clean build -x test
  
