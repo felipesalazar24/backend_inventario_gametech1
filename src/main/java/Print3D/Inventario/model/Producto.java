@@ -29,5 +29,11 @@ public class Producto {
 
     @Column(nullable = false, length = 255)
     private String categoria;
+
+    @Column(nullable = false)
+    private boolean oferta;
+
+    @Column(nullable = true)
+    private int oferPorcentaje;
 }
 
